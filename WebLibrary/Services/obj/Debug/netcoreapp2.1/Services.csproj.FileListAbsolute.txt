@@ -1,0 +1,14 @@
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\bin\Debug\netcoreapp2.1\Services.deps.json
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\bin\Debug\netcoreapp2.1\Services.dll
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\bin\Debug\netcoreapp2.1\Services.pdb
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\bin\Debug\netcoreapp2.1\Binding.dll
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\bin\Debug\netcoreapp2.1\Models.dll
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\bin\Debug\netcoreapp2.1\Binding.pdb
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\bin\Debug\netcoreapp2.1\Models.pdb
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\obj\Debug\netcoreapp2.1\Services.csprojAssemblyReference.cache
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\obj\Debug\netcoreapp2.1\Services.csproj.CoreCompileInputs.cache
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfoInputs.cache
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\obj\Debug\netcoreapp2.1\Services.AssemblyInfo.cs
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\obj\Debug\netcoreapp2.1\Services.csproj.CopyComplete
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\obj\Debug\netcoreapp2.1\Services.dll
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Services\obj\Debug\netcoreapp2.1\Services.pdb

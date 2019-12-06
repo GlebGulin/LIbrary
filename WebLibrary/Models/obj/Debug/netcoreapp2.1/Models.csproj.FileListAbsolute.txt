@@ -1,0 +1,9 @@
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Models\bin\Debug\netcoreapp2.1\Models.deps.json
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Models\bin\Debug\netcoreapp2.1\Models.dll
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Models\bin\Debug\netcoreapp2.1\Models.pdb
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Models\obj\Debug\netcoreapp2.1\Models.csprojAssemblyReference.cache
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Models\obj\Debug\netcoreapp2.1\Models.csproj.CoreCompileInputs.cache
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfoInputs.cache
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfo.cs
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Models\obj\Debug\netcoreapp2.1\Models.dll
+G:\LearnProgramming\Execution\Core\WebLibrary\WebLibrary\Models\obj\Debug\netcoreapp2.1\Models.pdb
