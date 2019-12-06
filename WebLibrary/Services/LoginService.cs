@@ -49,7 +49,7 @@ namespace Services
             var log = _bookDbContext.dataRegUser.Where(x => x.Email.Equals(login.Email) && x.Password.Equals(login.Pass)).FirstOrDefault();
             if (log == null)
             {
-                return new Response { Status = "Invalid", Message = "User is not registered" };
+                return new Response { Status = "Invalid", Message = "Пользователь не зарегестрирован" };
             }
             else
                 return new Response { Status = "Success", Message = "Enter Successfully" };
