@@ -1,8 +1,8 @@
 ﻿import React, { Component } from 'react';
 import './../../App.css';
-import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'react-dom';
-export default class Login extends Component {
-    displayName = Login.name
+import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+export class Login extends Component {
+    // displayName = Login.name
     constructor() {
         super();
         this.state = {
@@ -34,7 +34,7 @@ export default class Login extends Component {
         }).then((Response) => Response.json())
             .then((result) => {
                                 if (result.Status == 'Invalid')
-                    alert('Invalid User');
+                    alert('Не зарегестрированный пользователь');
                 else
                     this.props.history.push("/library");
             })
@@ -49,9 +49,9 @@ export default class Login extends Component {
                                 <Card className="p-2">
                                     <CardBody>
                                         <Form>
-                                            <div class="row" className="mb-2 pageheading">
+                                            <div className="row mb-2 pageheading">
                                                 <div class="col-sm-12 btn btn-primary">
-                                                    Login
+                                                    Вход
                              </div>
                                             </div>
                                             <InputGroup className="mb-3">
@@ -61,6 +61,7 @@ export default class Login extends Component {
                                                 <Input type="password" onChange={this.Password} placeholder="Введите Пароль" />
                                             </InputGroup>
                                             <Button onClick={this.login} color="success" block>Войти</Button>
+                                            
                                         </Form>
                                     </CardBody>
                                 </Card>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';   
+
+// import { Route } from 'react-router';
 import { Layout } from './components/Layout';
 
 import { Books } from './components/Books';
@@ -12,16 +14,22 @@ export default class App extends Component {
 
   render() {
     return (
-      <Layout>
-       
+      // <Layout>
+        <Switch> 
+            <Route exact path='/' component={Reg} />
+          <Route path='/log' component={Login} /> 
             <Route path='/library' component={Books} />
             <Route path='/orders' component={Orders} />
-            <Route path='/log' component={Login} />
-            <Route path='/reg' component={Reg} />
+            
+           
+     
 
 
 
-      </Layout>
+      {/* </Layout> */}
+       
+       
+         </Switch>
     );
   }
 }

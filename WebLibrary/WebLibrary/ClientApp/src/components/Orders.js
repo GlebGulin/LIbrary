@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import Layout from './Layout';
 export class Orders extends Component {
     displayName = Orders.name
    
@@ -43,11 +44,14 @@ export class Orders extends Component {
             : Orders.renderForecastsTable(this.state.forecasts);
 
         return (
+            <Layout>
+
             <div>
                 <h1>Книги на выдаче</h1>
                
                 {contents}
             </div>
+            </Layout>
         );
     }
 }

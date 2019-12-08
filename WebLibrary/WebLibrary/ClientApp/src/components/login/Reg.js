@@ -1,7 +1,7 @@
 ﻿import React, { Component } from 'react';
-import { Button, Card, CardFooter, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'react-dom';
+import { Button, Card, CardFooter, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 export class Reg extends Component {
-    displayName = Reg.name
+    // displayName = Reg.name
     constructor() {
         super();
         this.state = {
@@ -30,7 +30,7 @@ export class Reg extends Component {
         this.setState({ UserName: event.target.value })
     }
     register(event) {
-        fetch('insertreader', {
+        fetch('/insertreader', {
             method: 'post',
             headers: {
                 'Accept': 'application/json',
@@ -40,13 +40,13 @@ export class Reg extends Component {
                 UserName: this.state.UserName,
                 Password: this.state.Password,
                 Email: this.state.Email,
-                City: this.state.City,
+                City: this.state.City
                 
             })
         }).then((Response) => Response.json())
             .then((Result) => {
                 if (Result.Status == 'Success')
-                    this.props.history.push("/library");
+                    this.props.history.push("/log");
                 else
                     alert('Sorrrrrry !!!! Un-authenticated User !!!!!')
             })
@@ -60,9 +60,9 @@ export class Reg extends Component {
                             <Card className="mx-4">
                                 <CardBody className="p-4">
                                     <Form>
-                                        <div class="row" className="mb-2 pageheading">
+                                        <div className="row mb-2 pageheading">
                                             <div class="col-sm-12 btn btn-primary">
-                                                Sign Up
+                                                Вход
                         </div>
                                         </div>
                                         <InputGroup className="mb-3">

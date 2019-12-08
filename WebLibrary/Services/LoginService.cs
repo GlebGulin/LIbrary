@@ -9,7 +9,7 @@ namespace Services
 {
     public interface ILoginService
     {
-        object InsertReader(Registration Reg);
+        Response InsertReader(Registration Reg);
         Response ReaderLogin(Login login);
     }
     public class LoginService : ILoginService
@@ -19,7 +19,7 @@ namespace Services
         {
             _bookDbContext = bookDbContext;
         }
-        public object InsertReader(Registration Reg)
+        public Response InsertReader(Registration Reg)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace Services
                 throw;
             }
             return new Response
-            { Status = "Error", Message = "Not saved. Check your data" };
+            { Status = "Error", Message = "Не сохранено. Проверьте данные" };
         }
         public Response ReaderLogin(Login login)
         {

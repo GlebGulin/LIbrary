@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import Layout from './Layout';
 export class Books extends Component {
     displayName = Books.name
 //    render() {
@@ -22,6 +23,7 @@ export class Books extends Component {
 
     static renderForecastsTable(forecasts) {
         return (
+            
             <table className='table'>
                 <thead>
                     <tr>
@@ -51,11 +53,13 @@ export class Books extends Component {
             : Books.renderForecastsTable(this.state.forecasts);
 
         return (
+            <Layout>
             <div>
                 <h1>Список книг</h1>
                 
                 {contents}
             </div>
+            </Layout>
         );
     }
 }
