@@ -9,7 +9,7 @@ namespace Services
 {
     public interface ILoginService
     {
-        Response InsertReader(Registration Reg);
+        object InsertReader(Registration Reg);
         Response ReaderLogin(Login login);
     }
     public class LoginService : ILoginService
@@ -19,7 +19,7 @@ namespace Services
         {
             _bookDbContext = bookDbContext;
         }
-        public Response InsertReader(Registration Reg)
+        public object InsertReader(Registration Reg)
         {
             try
             {

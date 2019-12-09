@@ -41,15 +41,15 @@ export class Reg extends Component {
                 Password: this.state.Password,
                 Email: this.state.Email,
                 City: this.state.City
-                
+
             })
         }).then((Response) => Response.json())
             .then((Result) => {
                 if (Result.Status == 'Success')
                     this.props.history.push("/log");
                 else
-                    alert('Sorrrrrry !!!! Un-authenticated User !!!!!')
-            })
+                    alert('Sorrrrrry !!!! Un-authenticated User !!!!!');
+            });
     }
     render() {
         return (

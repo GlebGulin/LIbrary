@@ -1,5 +1,6 @@
 ﻿import React, { Component } from 'react';
 import './../../App.css';
+import Reg from './Reg';
 import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 export class Login extends Component {
     // displayName = Login.name
@@ -7,17 +8,17 @@ export class Login extends Component {
         super();
         this.state = {
             Email: '',
-            Password: ''
+            Pass: ''
         }
-        this.Password = this.Password.bind(this);
+        this.Pass = this.Pass.bind(this);
         this.Email = this.Email.bind(this);
         this.login = this.login.bind(this);
     }
     Email(event) {
         this.setState({ Email: event.target.value })
     }
-    Password(event) {
-        this.setState({ Password: event.target.value })
+    Pass(event) {
+        this.setState({ Pass: event.target.value })
     }
     login(event) {
         
@@ -29,11 +30,11 @@ export class Login extends Component {
             },
             body: JSON.stringify({
                 Email: this.state.Email,
-                Password: this.state.Password
+                Pass: this.state.Pass
             })
         }).then((Response) => Response.json())
             .then((result) => {
-                                if (result.Status == 'Invalid')
+                                if (result.status == 'Invalid')
                     alert('Не зарегестрированный пользователь');
                 else
                     this.props.history.push("/library");
@@ -58,9 +59,10 @@ export class Login extends Component {
                                                 <Input type="text" onChange={this.Email} placeholder="Введите Почту" />
                                             </InputGroup>
                                             <InputGroup className="mb-4">
-                                                <Input type="password" onChange={this.Password} placeholder="Введите Пароль" />
+                                                <Input type="password" onChange={this.Pass} placeholder="Введите Пароль" />
                                             </InputGroup>
                                             <Button onClick={this.login} color="success" block>Войти</Button>
+                                            <a href='/regist'>Зарегестрироваться</a>
                                             
                                         </Form>
                                     </CardBody>

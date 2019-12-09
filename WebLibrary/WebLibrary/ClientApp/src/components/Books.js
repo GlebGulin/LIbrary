@@ -39,7 +39,7 @@ export class Books extends Component {
                             <td>{forecast.nameBook}</td>
                             <td>{forecast.authorName}</td>
                             <td>{forecast.totalQuantity}</td>
-                            <td>{forecast.realQuantity}</td>
+                            <td><button>Взять</button>{forecast.realQuantity}<button>Вернуть</button></td>
                         </tr>
                     )}
                 </tbody>

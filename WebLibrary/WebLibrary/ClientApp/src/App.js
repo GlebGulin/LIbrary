@@ -15,11 +15,12 @@ export default class App extends Component {
   render() {
     return (
       // <Layout>
-        <Switch> 
-            <Route exact path='/' component={Reg} />
-          <Route path='/log' component={Login} /> 
-            <Route path='/library' component={Books} />
-            <Route path='/orders' component={Orders} />
+        <Switch>
+            <Route exact path='/' component={Login} /> 
+            <Route path='/regist' component={Reg} />
+            
+            <Route  path='/library' component={Books} />
+            <Route  path='/orders' component={Orders} />
             
            
      
